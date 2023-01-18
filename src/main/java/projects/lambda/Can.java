@@ -1,4 +1,4 @@
-package lambda;
+package projects.lambda;
 
 public class Can {
 

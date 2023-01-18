@@ -2,7 +2,7 @@ package day11stringmanipulations;
 
 import java.util.Scanner;
 
-public class StringReplaceAll_2 {
+public class StringManipulations02 {
 
         /*
           Type code to check the format of state abbreviations in the USA
@@ -33,8 +33,6 @@ public class StringReplaceAll_2 {
         if (abb.replaceAll("[A-Za-z]","").length() != 0){
             System.out.println("State abbreviations cannot have characters different from letters");
         }
-
-
 
 
 

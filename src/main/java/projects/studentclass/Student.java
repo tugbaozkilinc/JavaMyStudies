@@ -1,19 +1,16 @@
 package projects.studentclass;
 
-public class StudentClass {
+public class Student {
 
     private String studentName;
     private String studentSurname;
     private int studentAge;
 
-    public StudentClass(String studentName, String studentSurname, int studentAge) throws Exception {
-        this.studentName = studentName;
-        this.studentSurname = studentSurname;
-        if(studentAge>15){
-            throw new Exception("Student age can not be mre than 15");
-        } else {
-            this.studentAge = studentAge;
-        }
+    public Student(String studentName, String studentSurname, int studentAge) throws Exception {
+        setStudentAge(studentAge);
+        setStudentName(studentName);
+        setStudentSurname(studentSurname);
+
     }
 
     public String getStudentName() {
@@ -36,7 +33,20 @@ public class StudentClass {
         return studentAge;
     }
 
-    public void setStudentAge(int studentAge) {
+    public void setStudentAge(int studentAge) throws Exception {
+        if(studentAge>15)
+            throw new Exception("Student age can not be more than 15");
         this.studentAge = studentAge;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentName='" + studentName + '\'' +
+                ", studentSurname='" + studentSurname + '\'' +
+                ", studentAge=" + studentAge +
+                '}';
+    }
+
+
 }

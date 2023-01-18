@@ -1,6 +1,6 @@
 package day02arrays;
 
-public class ArrayChangeExcludingFirstAndLast02 {
+public class Array04 {
 
     public static void main(String[] args) {
 

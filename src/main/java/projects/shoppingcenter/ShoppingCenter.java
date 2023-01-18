@@ -1,4 +1,4 @@
-package practiceAdvanced.practice05.marketproject;
+package projects.shoppingcenter;
 
 import java.time.LocalDate;
 
@@ -18,7 +18,7 @@ public class ShoppingCenter {
     public ShoppingCenter(String productName, double productPrice) {
         this.productName = productName;
         this.productPrice = productPrice;
-        this.expireDate = "There is no expire date of this product";
+        expireDate = "There is no expire date of this product";
     }
 
     public void informationOfProduct(){

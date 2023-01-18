@@ -2,7 +2,7 @@ package day14map;
 
 import java.util.*;
 
-public class Map07 {
+public class Map02 {
 
     public static void main(String[] args) {
 

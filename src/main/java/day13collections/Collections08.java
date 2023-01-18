@@ -2,7 +2,7 @@ package day13collections;
 
 import java.util.HashSet;
 
-public class Map03 {
+public class Collections08 {
 
     public static void main(String[] args) {
 
@@ -20,21 +20,21 @@ public class Map03 {
 
     }
 
-    public static HashSet<Double> crateASet(HashSet<Double> set){
+    public static HashSet<Double> crateASet(HashSet<Double> mySet){
 
-        set.add(3.23);
-        set.add(3.10);
-        set.add(5.12);
-        set.add(10.12);
-        set.add(23.12);
+        mySet.add(3.23);
+        mySet.add(3.10);
+        mySet.add(5.12);
+        mySet.add(10.12);
+        mySet.add(23.12);
 
         double sum = 0;
-        for (Double w : set){
+        for (Double w : mySet){
             sum += w;
         }
         System.out.println("Sum is: " + sum);
 
-        return set;
+        return mySet;
     }
 
 

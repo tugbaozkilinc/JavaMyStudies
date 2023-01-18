@@ -1,4 +1,6 @@
-package practiceAdvanced.practice04.butceproject;
+package projects.budget;
+
+import projects.budget.Budget;
 
 public class BudgetRunner {
 

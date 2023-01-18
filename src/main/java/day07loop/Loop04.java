@@ -1,4 +1,4 @@
-package day07loops;
+package day07loop;
 
 public class Loop04 {
 

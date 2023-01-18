@@ -1,6 +1,6 @@
 package day09specialnumbers;
 
-public class PascalTriangle {
+public class SpecialNumbers06 {
 
     public static void main(String[] args) {
 

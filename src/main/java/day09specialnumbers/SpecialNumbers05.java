@@ -2,7 +2,7 @@ package day09specialnumbers;
 
 import java.util.Scanner;
 
-public class PrimeNumber {
+public class SpecialNumbers05 {
 
     public static void main(String[] args) {
 

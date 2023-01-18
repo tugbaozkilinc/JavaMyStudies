@@ -2,7 +2,7 @@ package day11stringmanipulations;
 
 import java.util.Scanner;
 
-public class StringReplaceAll_1 {
+public class StringManipulations01 {
 
           /*
             Type code to check the grammatical rules for full name
@@ -26,10 +26,10 @@ public class StringReplaceAll_1 {
          String fullName = scan.nextLine();
 
          String initialOfFirstName = fullName.substring(0,1);
-         Integer indexOfSpace = fullName.trim().indexOf(' ');
+         int indexOfSpace = fullName.trim().indexOf(' ');
          String initialOfLastName = fullName.substring(indexOfSpace+1, indexOfSpace+2);
-         Boolean isFirstNameInitialUpperCase = initialOfFirstName.charAt(0)>='A' && initialOfFirstName.charAt(0)<='Z';
-         Boolean isLastNameInitialUpperCase = initialOfLastName.charAt(0)>='A' && initialOfLastName.charAt(0)<='Z';
+         boolean isFirstNameInitialUpperCase = initialOfFirstName.charAt(0)>='A' && initialOfFirstName.charAt(0)<='Z';
+         boolean isLastNameInitialUpperCase = initialOfLastName.charAt(0)>='A' && initialOfLastName.charAt(0)<='Z';
 
          if (indexOfSpace == -1){
              System.out.println("First name or last name missed");

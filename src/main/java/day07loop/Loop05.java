@@ -1,4 +1,4 @@
-package day07loops;
+package day07loop;
 
 public class Loop05 {
     public static void main(String[] args) {

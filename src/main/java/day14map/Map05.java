@@ -1,8 +1,6 @@
-package day16map;
+package day14map;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Set;
+import java.util.*;
 
 public class Map05 {
 
@@ -22,7 +20,6 @@ public class Map05 {
                 map.put(w, appearance+1);
             }
         }
-
         System.out.println(map);
         Set<String> set = map.keySet();
         for (String w : set){
@@ -31,6 +28,27 @@ public class Map05 {
             }
         }
 
+        // How to check the number of repeated elements in a List
+
+        List<Integer> myList = new ArrayList<>();
+        myList.add(12);
+        myList.add(21);
+        myList.add(12);
+        myList.add(13);
+        myList.add(12);
+        myList.add(21);
+        myList.add(35);
+        Map<Integer, Integer> myMap = new HashMap<>();
+
+        for(Integer w : myList){
+            Integer occurrence = myMap.get(w);
+            if(occurrence==null){
+                myMap.put(w, 1);
+            } else {
+                myMap.put(w, occurrence+1);
+            }
+        }
+        System.out.println(myMap);
 
 
 

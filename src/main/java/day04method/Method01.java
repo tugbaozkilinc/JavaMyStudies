@@ -1,4 +1,4 @@
-package day08method;
+package day04method;
 
 public class Method01 {
 

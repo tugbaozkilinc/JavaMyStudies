@@ -1,4 +1,4 @@
-package day16map;
+package day14map;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,16 +21,15 @@ public class Map04 {
         System.out.println(result);
 
 
-
     }
 
-    public static List<String> printNames(HashMap<Integer, String> map, String programmingLanguage){
+    public static List<String> printNames(HashMap<Integer, String> maps, String programmingLanguages){
 
         List<String> list = new ArrayList<>();
 
-        for(String w : map.values()){
+        for(String w : maps.values()){
             String arr[] = w.split(", ");
-            if(arr[2].equalsIgnoreCase(programmingLanguage)){
+            if(arr[2].equalsIgnoreCase(programmingLanguages)){
                 list.add(arr[0]);
             }
         }

@@ -1,4 +1,4 @@
-package practiceAdvanced.practice04.butceproject;
+package projects.budget;
 
 public class Budget {
 

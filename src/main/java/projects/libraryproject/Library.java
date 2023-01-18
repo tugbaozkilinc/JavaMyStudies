@@ -1,4 +1,4 @@
-package practiceAdvanced.practice06.library;
+package projects.libraryproject;
 
 public class Library {
 
@@ -13,7 +13,7 @@ public class Library {
         this.authorName = authorName;
         this.pageOfBook = pageOfBook;
         numberOfBook++;
-        this.productId = authorName.substring(0, 2) + numberOfBook + bookName.substring(0, 1) + pageOfBook;
+        productId = authorName.substring(0, 2) + numberOfBook + bookName.substring(0, 2) + pageOfBook;
     }
 
     public void informationOfTheBook(){

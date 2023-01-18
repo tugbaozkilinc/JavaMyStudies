@@ -2,7 +2,7 @@ package day09specialnumbers;
 
 import java.util.Scanner;
 
-public class UglyNumber {
+public class SpecialNumbers02 {
 
     public static void main(String[] args) {
 
@@ -23,7 +23,7 @@ public class UglyNumber {
         } else if(s==1) {
             System.out.println("1 is an ugly number");
         } else {
-            for (int i = 1; i<s; i++){
+            for (int i = 2; i<=s; i++){
                 if(s%2==0 || s%3==0 || s%5==0){
                     count++;
                 }

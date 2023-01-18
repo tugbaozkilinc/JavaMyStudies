@@ -1,4 +1,4 @@
-package exception;
+package day06exception;
 
 public class Exceptions02 {
 
@@ -24,7 +24,8 @@ public class Exceptions02 {
         leroy.parseName();
         System.out.print(5); // 1245
 
-
     }
+
+
 
 }

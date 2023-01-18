@@ -1,8 +1,14 @@
 package projects.studentclass;
 
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.List;
 import java.util.Scanner;
 
-public class StudentClassRunner {
+import static projects.studentclass.School.scan;
+import static projects.studentclass.School.students;
+
+public class Runner {
 
     public static void main(String[] args) {
 
@@ -18,24 +24,58 @@ public class StudentClassRunner {
              bu yaşı geçen bir öğrenci eklenmek istenir ise yerine başka öğrenci isteyiniz.
         */
 
-        School school = new School();
-        while (true) {
+        School school = new School("HappySchool", 3);
+
+
+        int studentCounter = 1;
+
+        do {
             try {
-                StudentClass std1 = new StudentClass("Ece", "Can", 13);
-                School.students.add(std1.getStudentName());
-                School.students.add(std1.getStudentSurname());
-            } catch (Exception e) {
+                System.out.println("Enter the name of the student you want to add");
+                String studentName = scan.nextLine();
+                System.out.println("Enter the surname of the student you want to add");
+                String studentSurname = scan.nextLine();
+                System.out.println("Enter the age of the student you want to add");
+                int studentAge = scan.nextInt();
+                students.add(new Student(studentName, studentSurname, studentAge));
+                studentCounter++;
+                scan.nextLine();
+            }catch (Exception e){
                 System.out.println(e.getMessage());
+                System.out.println("Enter a new student");
+                scan.nextLine();
             }
+        }while (studentCounter <= school.getMaxStudentNumber());
+
+        System.out.println(students);
+
+
+        // with Map
+        Hashtable<String, Student> students = new Hashtable<>();
+
+        int count = 1;
+        while (count<= school.getMaxStudentNumber()){
+            try {
+                System.out.println("Enter the class name of the student you want to add");
+                String className = School.scan.nextLine();
+                System.out.println("Enter the name of the student you want to add");
+                String name = School.scan.nextLine();
+                System.out.println("Enter the surName of the student you want to add");
+                String surName = School.scan.nextLine();
+                System.out.println("Enter the age of the student you want to add");
+                int age = School.scan.nextInt();
+                students.put(className, new Student(name, surName, age));
+                count++;
+                School.scan.nextLine();
+            } catch (Exception e){
+                System.out.println(e.getMessage());
+                System.out.println("Enter a new student");
+                School.scan.nextLine();
+            }
+
         }
 
-
-
-
-
-
-
-
+        System.out.println(students);
 
 
 

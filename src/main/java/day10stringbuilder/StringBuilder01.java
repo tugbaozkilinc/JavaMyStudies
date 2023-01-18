@@ -1,11 +1,10 @@
-package stringbuilder;
+package day10stringbuilder;
 
 public class StringBuilder01 {
 
     public static void main(String[] args) {
 
-        // EbobEkok.Example 1:
-
+        // Example 1:
         // Knowledge: append(char[] ch) is used to append the String representation of the char argument to
         // the given sequence. The char argument is appended to the contents of this StringBuilder
         // sequence.
@@ -14,36 +13,33 @@ public class StringBuilder01 {
         char[] ch = new char[] { 'J', 'A', 'V', 'A' };
         stb.append(ch);
         System.out.println(stb); // Learn JAVA
+        stb.delete(0, 2);
+        System.out.println(stb); // arn JAVA
 
-        // EbobEkok.Example 2:
+        // Example 2:
+        StringBuilder sb3 = new StringBuilder("Learn"); // Buraya parantez icine "Learn" yazarsan append() methodunu kullanmadan, bunu capacity nin ustune ekliyor.
+        System.out.println("Before trim: " + sb3.capacity()); // 21 (16+5)
+        sb3.trimToSize(); // trimToSize(); StringBuilder in capacity ile length ini esitler.
+        System.out.println("After trim: " + sb3.capacity()); // 5 (21-16)
 
-        StringBuilder sb3 = new StringBuilder("Learn"); // Buraya parantez icine "Learn" yazarsan append() methodunu kullanmadan bunu capacity nin ustune ekliyor.
-        System.out.println("Before trim: " + sb3.capacity()); // 21
-        sb3.trimToSize();
-        System.out.println("After trim: " + sb3.capacity()); // 5
-
-        // EbobEkok.Example 3:
-
+        // Example 3:
         StringBuilder strBld = new StringBuilder(6);
         strBld.append("Learn");
         strBld.append("Java");
         System.out.println(strBld); // LearnJava
-        System.out.println(strBld.capacity()); // 14
+        System.out.println(strBld.capacity()); // 14 (6*2+2)
 
-        // EbobEkok.Example 4:
-
+        // Example 4:
         StringBuilder str = new StringBuilder(7);
         str.append("Java");
-        System.out.println(str.capacity() + " , " + str.length());
+        System.out.println(str.capacity() + ", " + str.length()); // 7, 4
+        System.out.println(str); // Java
 
-        // EbobEkok.Example 5:
-
-        System.out.println(str);
+        // Example 5:
         str.append("Java is so easy", 0, 4);
-        System.out.println(str);
+        System.out.println(str); // JavaJava
 
-        // EbobEkok.Example 6:
-
+        // Example 6:
         StringBuilder sb = new StringBuilder();
         sb.append("Kemal");
         System.out.println(sb.length()); // 5
@@ -63,8 +59,8 @@ public class StringBuilder01 {
         // StringBuilder strB = new StringBuilder("java");
         // if (s1.equals(strB)) System.out.println(2); // s1.equals(strB) is always false.
         // if (s1==strB) System.out.println(1); == kullanamazsin, CTE verir.
-        // equals(); methodu == gibi calisir.
-        // trimToSize(); StringBuilder in capacity ile length ini esitler.
+
+
 
 
 

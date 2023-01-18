@@ -25,7 +25,7 @@ public class Map06 {
         List<String> lineList = new ArrayList<>();
 
         try{
-            BufferedReader br = new BufferedReader(new FileReader("src\\main\\java\\day16map\\File.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("src\\main\\java\\day15exceptionsreadfile\\File.txt"));
             String line = br.readLine();
             while (line != null){
                 lineList.add(line);
@@ -34,7 +34,7 @@ public class Map06 {
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
-        System.out.println("Line list is: " + lineList);
+
         for(String w : lineList){
             String arr[] = w.split(", ");
             map.put(arr[0], arr[1]);

@@ -3,7 +3,7 @@ package day02arrays;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class ArrayElementLength {
+public class Array05 {
 
     public static void main(String[] args) {
 

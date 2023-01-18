@@ -1,10 +1,10 @@
-package day15collections;
+package day13collections;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 
-public class LinkedList01 {
+public class Collections01 {
 
     public static void main(String[] args) {
 

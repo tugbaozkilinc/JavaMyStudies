@@ -1,6 +1,6 @@
 package day06exception;
 
-public class Exception01 {
+public class Exceptions01 {
 
     public static void main(String[] args) {
 

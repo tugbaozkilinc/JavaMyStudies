@@ -1,6 +1,6 @@
 package day09specialnumbers;
 
-public class SumOfTwoBinaries {
+public class SpecialNumbers01 {
 
     public static void main(String[] args) {
 

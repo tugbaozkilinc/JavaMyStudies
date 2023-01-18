@@ -1,6 +1,6 @@
 package day05enum;
 
-public class Enum {
+public class Enum01 {
 
     public enum Browsers{
         CHROME, SAFARI, IE, FIREFOX, YANDEX

@@ -1,7 +1,6 @@
 package day11stringmanipulations;
 
-public class StringReplaceAll_3 {
-
+public class StringManipulations03 {
 
     public static void main(String[] args) {
 
@@ -9,12 +8,12 @@ public class StringReplaceAll_3 {
          String shirtPrice = ‘$12.99’;
          String bookPrice = ‘$35.99’;
          Type code to find the sum of the shirt and book prices.
-         */
+        */
 
         String shirtPrice1 = "$12.99";
         String bookPrice1 = "$35.99";
 
-        String s = shirtPrice1.replaceAll("[$.]","");  // Note: [$.] buradaki nokta bu degeri 100 ile carpti benim anladigim.
+        String s = shirtPrice1.replaceAll("[$.]","");
         String b = bookPrice1.replaceAll("[$.]","");
         double x = Double.valueOf(s);
         double y = Double.valueOf(b);
@@ -22,7 +21,7 @@ public class StringReplaceAll_3 {
 
         // Note: String ifadede olan $ ve . karakterleri hiclik ile yer degistirmis. Buradaki amac; ondalikli sayilar bazi bilgisayarlarda . ile ifade edilirken
         // bazilarinda , ile ifade ediliyor. Burada bunun onune gecilmek istenmis. Yukaridaki String ifade $ ve . isaretinden arindirilinca 1299 ve 3599 oluyor.
-        // Burada toplama isleminden sonra 100' e bolunmesinin sebebi bu.
+        // Burada toplama isleminden sonra 100'e bolunmesinin sebebi bu.
 
 
 

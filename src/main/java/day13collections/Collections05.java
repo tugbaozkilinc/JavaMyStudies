@@ -1,11 +1,11 @@
-package day15collections;
+package day13collections;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Set04 {
+public class Collections05 {
 
     public static void main(String[] args) {
 

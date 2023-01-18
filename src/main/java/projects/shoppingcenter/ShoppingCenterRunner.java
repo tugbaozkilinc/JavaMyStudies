@@ -1,4 +1,4 @@
-package practiceAdvanced.practice05.marketproject;
+package projects.shoppingcenter;
 
 public class ShoppingCenterRunner {
 

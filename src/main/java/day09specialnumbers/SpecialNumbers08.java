@@ -2,13 +2,13 @@ package day09specialnumbers;
 
 import java.util.Arrays;
 
-public class FibonacciNumber {
+public class SpecialNumbers08 {
 
     public static void main(String[] args) {
 
         /*
           Ask the user how many fibonacci numbers he wants to see. Then write the code that prints
-          these fibonacci numbers. EbobEkok.day09specialnumbers.Example: if user enters 6 output will be 1 1 2 3 5 8
+          these fibonacci numbers. if user enters 6 output will be 1 1 2 3 5 8
         */
 
         // 1. yol:

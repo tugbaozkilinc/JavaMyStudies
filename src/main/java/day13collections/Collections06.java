@@ -1,11 +1,11 @@
-package day15collections;
+package day13collections;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Set05 {
+public class Collections06 {
 
     public static void main(String[] args) {
 
@@ -20,7 +20,7 @@ public class Set05 {
 
         Set<Integer> set = new HashSet<>(myList);
 
-        if (myList.size()== set.size()){
+        if (myList.size() == set.size()){
             System.out.println("There is no repeated elements");
         } else {
             System.out.println("There is repeated elements");

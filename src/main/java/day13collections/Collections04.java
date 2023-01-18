@@ -1,11 +1,8 @@
-package day15collections;
+package day13collections;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
-public class Set03 {
+public class Collections04 {
 
     public static void main(String[] args) {
 
@@ -33,8 +30,18 @@ public class Set03 {
         System.out.println();
 
         // 2. yol:
-        mySet.retainAll(myList);
+        mySet.retainAll(myList); // Retains only the elements in this set that are contained in the specified collection.
         System.out.println(mySet);
+
+        // 3. yol:
+        for(Integer w : myList){
+            for(Integer z : mySet){
+                if(Objects.equals(w, z)){
+                    System.out.print(w + " ");
+                }
+            }
+        }
+
 
 
 

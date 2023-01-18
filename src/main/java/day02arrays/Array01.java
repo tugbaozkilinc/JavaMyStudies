@@ -2,7 +2,7 @@ package day02arrays;
 
 import java.util.Arrays;
 
-public class ArrayQuestions_1 {
+public class Array01 {
 
     public static void main(String[] args) {
 

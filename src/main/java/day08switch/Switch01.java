@@ -1,4 +1,4 @@
-package day12switch;
+package day08switch;
 
 public class Switch01 {
 

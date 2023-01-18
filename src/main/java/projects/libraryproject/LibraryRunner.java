@@ -1,10 +1,10 @@
-package practiceAdvanced.practice06.library;
+package projects.libraryproject;
 
 public class LibraryRunner {
 
     public static void main(String[] args) {
 
-        Library book1 = new Library("Harry Potter", "J K Rowling", 500);
+        Library book1 = new Library("Harry Potter", "JK Rowling", 500);
         book1.informationOfTheBook();
 
         Library book2 = new Library("1984", "George Orwell", 352);
